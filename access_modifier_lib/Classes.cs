@@ -4,7 +4,7 @@
  * 那就是如果一个class是internal， 他的类成员是public，那在其他assembly里面也是访问不到的
  * 那就是如果一个class是public，   他的类成员是internal，那在其他的assmbly里面也是访问不到的，在其他assembly 的子类下页访问不了，但是可以在同一个namespace下的子类访问该internal成员
  *                                他的类成员是private（也是默认的）， 那只能在该class 里面访问，同一个namespace下的基类也无法访问
- *                                他的类成员是protected, 可以在基类下访问，也可以在其他assembly下的子类访问，但是不能在其他assembly下访问
+ *                                他的类成员是protected, 可以在基类下访问，也可以在其他assembly下的子类访问，但是不能在其他assembly的其他类下进行访问
  
      */
 namespace access_modifier_lib
